@@ -1,29 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Domain
+namespace DLL;
+
+public partial class Cliente
 {
-    public class Cliente
-    {
-        public int idCliente { get; set; }
+    public int IdCliente { get; set; }
 
-        public string nombre { get; set; }
+    public string Nombre { get; set; } = null!;
 
-        public string apellido { get; set; }
+    public string Apellido { get; set; } = null!;
 
-        public TipoIdentificacion objTipoIdentificacion { get; set; }
+    public int IdTipoIdentificacion { get; set; }
 
-        public DateOnly fechaNacimiento { get; set; }
+    public DateTime FechaNacimiento { get; set; }
 
-        public string direccion { get; set; }
+    public string? Direccion { get; set; }
 
-        public string telefono { get; set; }
+    public string Telefono { get; set; } = null!;
 
-        public string email { get; set; }
+    public string? Email { get; set; }
 
 
-    }
+
 }

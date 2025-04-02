@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Domain
+namespace DLL;
+
+public partial class TipoIdentificacion
 {
-    public class TipoIdentificacion
-    {
+    public int IdTipoIdentificacion { get; set; }
 
-        public int idTipoIdentificacion { get; set; }
-        public string nombre { get; set; }
-        public string descripcion { get; set; }
-    }
+    public string Nombre { get; set; } = null!;
+
+    public string? Descripcion { get; set; }
 }

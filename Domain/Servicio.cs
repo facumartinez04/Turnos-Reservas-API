@@ -1,26 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Domain
+namespace DLL;
+
+public partial class Servicio
 {
-    public class Servicio
-    {
+    public int IdServicio { get; set; }
 
-        public int idServicio { get; set; }
+    public string Nombre { get; set; } = null!;
 
-        public string nombre { get; set; }
+    public string Descripcion { get; set; } = null!;
 
-        public string descripcion { get; set; }
+    public decimal Precio { get; set; }
 
-        public decimal precio { get; set; }
+    public decimal Duracion { get; set; }
 
-        public decimal duracion { get; set; }
-
-        public string imagen { get; set; }
-
-
-    }
+    public string? Imagen { get; set; }
 }

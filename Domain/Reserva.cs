@@ -1,18 +1,19 @@
-﻿namespace Domain
+﻿using System;
+using System.Collections.Generic;
+
+namespace DLL;
+
+public partial class Reserva
 {
-    public class Reserva
-    {
+    public int IdReserva { get; set; }
 
-        public int idReserva { get; set; }
+    public int IdCliente { get; set; }
 
-        public Cliente objCliente { get; set; }
-        public DateOnly fechaInicio { get; set; }
+    public DateTime FechaReserva { get; set; }
 
-        public DateTime horario { get; set; }
-        public decimal precioTotal { get; set; }
+    public DateTime Horario { get; set; }
 
-        public List<Servicio> objServicios { get; set; }
+    public decimal PrecioTotal { get; set; }
 
-
-    }
+    public int IdDetalleServicios { get; set; }
 }
